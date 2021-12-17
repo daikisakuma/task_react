@@ -20,3 +20,5 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/react_basic', 'App\Http\Controllers\ReactBasicController@reactTodo')->name('react.basic');

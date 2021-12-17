@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.taskapp')
 
 @section('content')
 <div class="container">
@@ -20,4 +20,5 @@
         </div>
     </div>
 </div>
+<script src="{{ asset('js/app.js') }}"></script>
 @endsection

@@ -1,0 +1,45 @@
+.sidebar {
+    height: 90vh;
+    width: 200px;
+    border-right: 1px solid #bebdbd;
+    overflow-y: auto;
+    position: fixed;
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none;
+}
+
+.sidebar h2 {
+    font-size: 15px;
+    font-weight: bold;
+    color: #515fd8;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+.sidebar ul {
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 15px;
+    font-size: 13px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #a0a0a0;
+}
+
+.sidebar a:hover {
+    color: black;
+}
+
+.fas {
+    width: 15px;
+}
+
+.sidebar li a span {
+    margin-left: 5px;
+}

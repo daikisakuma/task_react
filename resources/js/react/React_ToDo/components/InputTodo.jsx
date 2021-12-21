@@ -3,7 +3,7 @@ import React from "react";
 const style = {
     display: 'flex',
     backgroundColor: '#c1ffff',
-    width: '400px',
+    width: '1000px',
     height: '50px',
     padding: '8px',
     margin: '8px',
@@ -11,18 +11,27 @@ const style = {
 }
 
 export const InputTodo = (props) => {
-    const { todoText, onChange, onClick, disabled } = props;
+    const { todoText, onChangeTodoText, todoTime, onChangeTodoTime, onClickAdd, disabled } = props;
     return (
         <div style={style}>
             <input
+                className="input-area-left"
+                type="datetime-local"
+                value={todoTime}
+                onChange={onChangeTodoTime}
+            />
+            <input
+                className="input-area-right"
                 disabled={disabled}
                 placeholder="TODOを入力"
                 value={todoText}
-                onChange={onChange}
+                onChange={onChangeTodoText}
             />
+
             <button
+            className="input-area-btn"
                 disabled={disabled}
-                onClick={onClick}>
+                onClick={onClickAdd}>
                 追加
             </button>
         </div>

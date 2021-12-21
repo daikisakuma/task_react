@@ -1,57 +1,86 @@
 body {
     font-family: sans-serif;
 }
-
+#react-todo {
+    display: flex;
+    justify-content:center;
+}
 input {
-    border-radius: 16px;
+    border-radius: 8px;
     border: none;
     padding: 6px 16px;
     outline: none;
 }
-
 button {
-    border-radius: 16px;
+    border-radius: 8px;
     border: none;
     padding: 4px 16px;
 }
-
 button:hover {
     background-color: #ff7fff;
     color: #fff;
     cursor: pointer;
 }
-
+ul {
+    padding: 0;
+}
 li {
     margin-right: 8px;
 }
-
+.input-area-right {
+    margin-left: 5px;
+}
+.input-area-btn {
+    margin-left: 20px;
+}
 .incomplete-area {
     background-color: #c6ffe2;
-    width: 400px;
+    width: 1000px;
     min-height: 200px;
     padding: 8px;
     margin: 8px;
     border-radius: 8px;
 }
-
 .complete-area {
     background-color: #ffffe0;
-    width: 400px;
+    width: 1000px;
     min-height: 200px;
     padding: 8px;
     margin: 8px;
     border-radius: 8px;
 }
-
 .title {
     text-align: center;
     margin-top: 0;
     font-weight: bold;
     color: #666;
 }
-
 .list-row {
     display: flex;
     align-items: center;
     padding-bottom: 4px;
+    border-top: 1px dotted #828282;
+    padding-top: 10px;
+}
+.todo-list {
+    display: flex;
+    align-items: center;
+}
+.list-circle {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #c70000;
+    border-radius: 50%;
+    background: #eb958f;
+    margin-right: 10px;
+}
+.todo-time {
+    width: 153px;
+    font-weight: bold;
+    color: red;
+    margin-right: 10px;
+}
+.todo-text {
+    width: 500px;
+    font-size: 20px;
 }

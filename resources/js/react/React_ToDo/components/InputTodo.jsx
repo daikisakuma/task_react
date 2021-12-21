@@ -11,9 +11,10 @@ const style = {
 }
 
 export const InputTodo = (props) => {
-    const { todoText, onChangeTodoText, todoTime, onChangeTodoTime, onClickAdd, disabled } = props;
+    const { todoText, onChangeTodoText, todoTime, onChangeTodoTime, onClickAdd, disabled, todoImageAlarm } = props;
     return (
         <div style={style}>
+            <img src={todoImageAlarm} alt="" />
             <input
                 className="input-area-left"
                 type="datetime-local"

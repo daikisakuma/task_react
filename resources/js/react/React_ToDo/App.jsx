@@ -158,8 +158,10 @@ export const App = () => {
   };
 
   useEffect(() => {
-    let loadTodos = loadTodo();
+    loadTodo();
   }, []);
+
+  let todo_image_alarm = $('#react-todo').data('images-alarm')
 
   return (
     <div className="main">
@@ -169,6 +171,7 @@ export const App = () => {
         todoTime={todoTime}
         onChangeTodoTime={onChangeTodoTime}
         onClickAdd={onClickAdd}
+        todoImageAlarm={todo_image_alarm}
         // disabled={incompleteTodos.length >= 5}
       />
       {/* {incompleteTodos.length >= 5 && <p style={{ color: 'red' }} >登録できるtodo5個までだよ～。消化しろ～。</p>} */}
@@ -176,10 +179,12 @@ export const App = () => {
         todos={incompleteTodos}
         onClickComplete={onClickComplete}
         onClickDelete={onClickDelete}
+        todoImageAlarm={todo_image_alarm}
       />
       <CompleteTodos
         todos={completeTodos}
         onClickBack={onClickBack}
+        todoImageAlarm={todo_image_alarm}
       />
     </div>
   );

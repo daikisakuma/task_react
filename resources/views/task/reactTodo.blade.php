@@ -9,6 +9,7 @@
             data-load-todo={{ route('load.todo') }}
             data-delete-todo={{ route('delete.todo') }}
             data-status-change-todo={{ route('status.change.todo') }}
+            data-images-alarm={{ asset('images/todo_alarm.png') }}
         ></div>
     </div>
 @endsection

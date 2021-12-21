@@ -1,7 +1,7 @@
 import React from "react";
 
 export const IncompleteTodos = (props) => {
-    const {todos, onClickComplete, onClickDelete} = props;
+    const {todos, onClickComplete, onClickDelete, todoImageAlarm} = props;
     return (
         <div className="incomplete-area">
             <p className="title">未完了のTODO</p>
@@ -11,6 +11,7 @@ export const IncompleteTodos = (props) => {
                     <div key={todo.id} className="list-row">
                         <li className="todo-list" id={todo.id}>
                             <span className="list-circle"></span>
+                            <img style={{ 'width': '30px' }} src={todoImageAlarm} alt="" />
                             <div className="todo-time">{todo.todoTime}</div>
                             <div className="todo-text">{todo.todoText}</div>
                         </li>

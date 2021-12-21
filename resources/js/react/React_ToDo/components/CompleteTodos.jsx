@@ -1,7 +1,7 @@
 import React from "react";
 
 export const CompleteTodos = (props) => {
-    const { todos, onClickBack } = props;
+    const { todos, onClickBack, todoImageAlarm } = props;
     return (
         <div className="complete-area">
             <p className="title">完了のTODO</p>
@@ -11,6 +11,7 @@ export const CompleteTodos = (props) => {
                     <div key={todo.todoText} className="list-row">
                         <li className="todo-list">
                             <span className="list-circle"></span>
+                            <img style={{ 'width': '30px' }} src={todoImageAlarm} alt="" />
                             <div className="todo-time">{todo.todoTime}</div>
                             <div className="todo-text">{todo.todoText}</div>
                         </li>

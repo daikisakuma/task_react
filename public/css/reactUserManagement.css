@@ -1,0 +1,9 @@
+body {
+    font-family: sans-serif;
+}
+
+#react-user-management {
+    display: flex;
+    justify-content:center;
+    padding-top: 60px;
+}

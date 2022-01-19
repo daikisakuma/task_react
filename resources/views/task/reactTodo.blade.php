@@ -2,7 +2,7 @@
 
 @section('content')
 <link href="{{ asset('css/reactTodo.css') }}" rel="stylesheet">
-    <div class="task1">
+    <div>
         <div
             id="react-todo"
             data-register-todo={{ route('register.todo') }}

@@ -1,7 +1,7 @@
 <nav class="sidebar">
     <h2>Menu</h2>
     <ul>
-        <li><a href="{{ route('react.basic') }}"><i class="fas fa-home"></i><span>React_ToDo</span></a></li>
+        <li><a href="{{ route('react.todo') }}"><i class="fas fa-home"></i><span>React_ToDo</span></a></li>
         {{-- <li><a href=""><i class="fas fa-address-book"></i><span>Task02</span></a></li> --}}
         {{-- <li><a href="{{ route('task3') }}"><i class="fas fa-wallet"></i><span>Task03</span></a></li>
         <li><a href="{{ route('task4') }}"><i class="fas fa-wallet"></i><span>Task04</span></a></li>

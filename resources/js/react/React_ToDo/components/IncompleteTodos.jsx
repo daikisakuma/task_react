@@ -15,8 +15,10 @@ export const IncompleteTodos = (props) => {
                             <div className="todo-time">{todo.todoTime}</div>
                             <div className="todo-text">{todo.todoText}</div>
                         </li>
-                        <button style={{ marginRight: '2px' }} onClick={() => onClickComplete(index)}>完了</button>
-                        <button onClick={() => onClickDelete(index)}>削除</button>
+                        <div>
+                            <button style={{ marginRight: '2px' }} onClick={() => onClickComplete(index)}>完了</button>
+                            <button onClick={() => onClickDelete(index)}>削除</button>
+                        </div>
                     </div>
                     );
                 })}

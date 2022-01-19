@@ -79,7 +79,7 @@
             </div>
         </nav>
 
-        <main class="p-4">
+        <main>
             <div class="main-inr">
                 @include('layouts.sidebar')
                 <div class="task">

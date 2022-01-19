@@ -4,6 +4,7 @@
     border-right: 1px solid #bebdbd;
     overflow-y: auto;
     position: fixed;
+    padding-left: 30px;
 }
 
 .sidebar::-webkit-scrollbar {
@@ -20,6 +21,7 @@
 
 .sidebar ul {
     padding: 0;
+    list-style: none;
 }
 
 .sidebar li {
